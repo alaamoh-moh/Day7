@@ -1,0 +1,13 @@
+<p>{{users.length}}</p>
+<ul class="list-group">
+<li class="list-group item" *ngfor = "let item of users ; let i = index" >
+    {{item.name}}
+    
+    <p class="float-right"><button class="btn btn-danger" (click)="delet(i)" > delete</button>
+    <button class="btn btn-primary" > edit</button>
+    <button class="btn btn-sucess" (click)="usertrans(item)"> view</button>
+</p></li>
+
+    
+</ul>
+<button class="btn btn-primary w-80 mx-auto"> add user</button>
